@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="utf-8">
-<title>Annika</title>
-<link rel="stylesheet" href="Stylesheet.css">
+    <meta charset="utf-8">
+    <title>Annika</title>
+    <link rel="stylesheet" href="Stylesheet.css">
 </head>
 
+
 <body>
-     <div class="Navbar">
-               <a href="index.html">Mein Portfolio</a>
-               <a href="Kontakt.html">Kontakt</a>
-               <a href="Ueber_mich.html">Über mich</a>
-               <img id="Krone" src="Medien/Krone.png" alt="König">
-     </div>
-     <h1>Kontakt</h1>
-     <h2>Sie können mich über Instagram kontaktieren...</h2>
-    <a href="https://www.instagram.com/thats.anni/" target="_blank"><img src="Medien/Instalogo.jpg" alt="Das Logo von Instagram"></a>
-    <h2>Anschreiben könnt Ihr mich auf Discord!</h2>
-    <img src="Medien/Discord.gif" alt="DiscordGIF">
-    <h3>@ franzinex#7099</h3>
-    <p>Auch auf anderen sozialen Medien bin ich:)</p>
-    <video src="Medien/socialmedia.mp4" controls></video>
-    <p>Dazu passend:</p>
-    <img src="Medien/subscribe.jpg" alt="Subscribe">
-    <p>Derzeit wohne ich im schönen Schwarzwald.</p>
-    <img src="Medien/schwarzwald.jpg" alt="Ein Bild vom Schwarzwald">
-    <p>Aber eigentlich komme ich von dem Bodensee.</p>
-    <img src="Medien/bodensee.jpg" alt="Ein Bild vom Bodensee">
-    <p>Das wars zu meiner Person & meinem Kontakt!</p>
-    <br>
-    
-    <p>Bis dann!</p>
-    <img src="Medien/Snoopy.gif" alt="Snoopy">
+
+
+
+
+        <div class="Navbar">
+            <a id="Pfusch" href="index.html">Mein Portfolio</a>
+            <a href="Ueber_mich.html">Über mich</a>
+            <a class="current" href="Kontakt.html">Kontakt</a>
+            <div>
+                <a href="https://www.instagram.com/thats.anni/" target="_blank"><img id="Insta"
+                        src="Medien/instagram-new--v1.png" alt="Insta"></a>
+            </div>
+            <div>
+                <a href="https://discordapp.com/channels/@me/832988888481660948/" target="_blank"><img id="Discord"
+                        src="Medien/discord-logo.png" alt="Discord"></a>
+            </div>
+            <img id="Krone" src="Medien/Krone.png" alt="König">
+        </div>       
+         <header>
+            <video id="Header" src="Medien/you.mp4" autoplay></video>
+
+        </header>
+
+
+        <div id="Content">
+
+        <h1>Kontakt</h1>
+        <p>Bin auf vielen sozialen Medien.</p>
+        <video src="Medien/socialmedia.mp4" controls></video>
+        <p>Derzeit wohne ich im Schwarzwald.</p>
+        <img src="Medien/schwarzwald.jpg" alt="Ein Bild vom Schwarzwald">
+        <p>Aber eigentlich komme ich von dem Bodensee.</p>
+        <img src="Medien/bodensee.jpg" alt="Ein Bild vom Bodensee">
+        <p>Das wars zu meiner Person & meinem Kontakt!</p>
+        <br>
+        <div id="Kontaktform">
+            <form id="kontaktformular" name="kontaktformular" action="">
+                <div>
+                    <input type="text" id="Vorname" class="Input" name="Vorname" placeholder="Vorname" />
+                </div>
+                <div>
+                    <input type="text" id="Nachname" class="Input" name="Nachname" placeholder="Nachname" />
+                </div>
+                <div>
+                    <input type="email" id="Email" class="Input" name="Email" placeholder="E-Mail" />
+                </div>
+                <div>
+
+                    <textarea name="nachricht" id="Nachricht" cols="45" rows="5" placeholder="Nachricht"></textarea>
+                </div>
+                <p id="Datenschutz">Mit Absenden der Nachricht bestätige ich die Nutzerbedingungen und deren
+                    Datenschutz.
+                </p>
+                <div>
+                    <input class="Absendebutton" type="submit" value="Absenden" />
+                </div>
+
+            </form>
+
+            
+        </div>
+        <img id="Snoopy" src="Medien/Snoopy.gif" alt="Snoopy">
+    </div>
 </body>
 
-</html> 
+</html>

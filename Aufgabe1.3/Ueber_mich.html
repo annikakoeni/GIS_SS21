@@ -1,46 +1,120 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="utf-8">
-<title>Annika</title>
-<link rel="stylesheet" href="Stylesheet.css">
+     <meta charset="utf-8">
+     <title>Annika</title>
+     <link rel="stylesheet" href="Stylesheet.css">
 </head>
 
 <body>
      <div class="Navbar">
-          <a href="index.html">Mein Portfolio</a>
+          <a id="Pfusch" href="index.html">Mein Portfolio</a>
+          <a class="current" href="Ueber_mich.html">Über mich</a>
           <a href="Kontakt.html">Kontakt</a>
-          <a href="Ueber_mich.html">Über mich</a>
+          <div>
+               <a href="https://www.instagram.com/thats.anni/" target="_blank"><img id="Insta"
+                         src="Medien/instagram-new--v1.png" alt="Insta"></a>
+          </div>
+          <div>
+               <a href="https://discordapp.com/channels/@me/832988888481660948/" target="_blank"><img id="Discord"
+                         src="Medien/discord-logo.png" alt="Discord"></a>
+          </div>
           <img id="Krone" src="Medien/Krone.png" alt="König">
-</div>
+     </div>
+     <header>
+          <video id="Header" src="Medien/you.mp4" autoplay></video>
 
-     <h1>Das ist meine Website</h1>
-     <img src="Medien/annika.jpg" alt="Das bin ich.">
-     <h2 class="Test" id="me"> Meine Person </h2>
-     <p> Mein Name ist Annika König. Ich bin 20 Jahre alt und wohne derzeit in Furtwangen. </p>
-     <h2 class="Test"> Mein Studium </h2>
-     <p> Ich studiere Online Medien im zweiten Semester. Dies ist eine Mischung zwischen Medienkonzeption und Medieninformatik. </p>
-<h2 class="Test" id="Tiere">Tiere</h2>
-<p>Ich mag Tiere sehr gerne, wie diese Hunde beispielsweise</p>
-<video src="Medien/Puppies1.mp4" controls autoplay></video> <br>
+     </header>
 
-     <a href="https://www.tiervermittlung.de/hundewelpen" target=”_blank”>Hundis adoptieren</a>
 
-<p>oder auch wie diese Eule.</p>
-<video src="Medien/Owl.mp4" controls></video>
-<p>Katzen finde ich auch super toll.</p>
-<video src="Medien/Kadse.webm" controls muted loop autoplay></video>
-<h2>Interessen etc.</h2>
-<p>Das Universum fasziniert mich</p>
-<video src="Medien/Earth.mp4" controls ></video>
-<p>Eines von vielen Dingen, die ich mal machen möchte.</p>
-<video src="Medien/Paraglider.mp4" controls ></video>
-<p>Dieser Sound soll gruselig sein. Ist er aber meiner Meinung nach nicht. Übrigens zählt Horror nicht zu meinen Lieblings Genres.</p>
-<audio controls><source src="Medien/creepy.mp3" type="audio/mp3"></audio>
-<p>Hier noch eine Musik Audio, weil ich Musik mag, wie vermutlich die meisten. habe aber leider keine Audio gefunden, die mir besonders gut gefällt.</p>
-<audio controls><source src="Medien/SilentCrafter.mp3" type="audio/mp3"></audio>
+     <div id="Content">
 
-          <a href="#me">Geh zu meiner Person</a> 
+          <div id="Aboutmediv">
+               <h1>Hier erfahrt ihr mehr zu meiner Person!</h1>
+
+               <img id="Anni" src="Medien/annika.jpg" alt="Das bin ich.">
+
+               <div id="Aboutme">
+                    <h2 id="me"> Über mich </h2>
+                    <p> Mein Name ist Annika König. Ich komme aus der Nähe von Ravensburg. Bin 20 Jahre alt und wohne
+                         derzeit
+                         in
+                         Furtwangen. </p>
+                    <h2> Mein Studium </h2>
+                    <p> Ich studiere Online Medien im zweiten Semester. Dies ist eine Mischung zwischen Medienkonzeption
+                         und
+                         Medieninformatik.
+                         Man programmiert aber beschäftigt sich auch mit Gestaltung. </p>
+                    <h2 id="Tiere">Tiere</h2>
+                    <p>Ich mag Tiere sehr gerne, wie beispielsweise Hunde, Eulen und besonders Katzen.
+                         Am liebsten habe ich meine Katze Felix.
+                    </p>
+               </div>
+          </div>
+          <br>
+          <h2>Das ist Felix!</h2>
+          <img class="Medien" src="Medien/felix.jpg" alt="Felix">
+
+          
+          <h2>Mehr Tiere!</h2>
+          <video class="Medien" src="Medien/Puppies1.mp4" controls autoplay></video> <br>
+          <a class="adopt" href="https://www.tiervermittlung.de/hundewelpen" target=”_blank”>Hundis adoptieren</a>
+          <video class="Medien" src="Medien/Owl.mp4" controls></video>
+          <a class="adopt" href="http://www.falknerei-eulenhof.de/" target=”_blank”>Eulenshow!</a>
+          <video class="Medien" src="Medien/Kadse.webm" controls muted loop autoplay></video>
+          <a class="adopt"
+               href="https://www.deine-tierwelt.de/kleinanzeigen/katzen-aus-dem-tierheim-tierschutz-c102771/"
+               target=”_blank”>Kadsen adoptieren</a>
+          <h2>Meine Interessen</h2>
+          <p>Eines von vielen Dingen, die ich mal machen möchte.</p>
+          <video class="Medien" src="Medien/Paraglider.mp4" controls></video>
+          <br>
+          <br>
+          <div id="Audiogesamt">
+               <div id="Audiotext">
+                    <p>Dieser Sound soll gruselig sein. Ist er aber meiner Meinung nach nicht. Übrigens zählt Horror
+                         nicht zu
+                         meinen
+                         Lieblings Genres.</p>
+
+                    <p>Hier noch eine Musik Audio, weil ich Musik mag, wie vermutlich die meisten. habe aber leider
+                         keine
+                         Audio
+                         gefunden, die mir besonders gut gefällt.</p>
+               </div>
+               <div id="Audio">
+                    <audio controls>
+                         <source src="Medien/creepy.mp3" type="audio/mp3">
+                    </audio>
+                    <audio id="Audiopfusch" controls>
+                         <source src="Medien/SilentCrafter.mp3" type="audio/mp3">
+                    </audio>
+               </div>
+          </div>
+
+          <h2>Kunst</h2>
+          <p>Ich zeichne und male sehr gerne, wenn ich die Zeit dafür habe.
+               <br>
+               <p>Das habe ich zum Beispiel mal gezeichnet.</p>
+               <img id="flower" src="Medien/blumen.jpg" alt="Roses">
+               
+               <h2>Festivals</h2>
+               <p>Hoffentlich bald wieder möglich...</p>
+               <img id="Holi" src="Medien/holi.jpg" alt="Holi">
+          </p> 
+          <h2>Familie</h2>
+          <p>Meine Familie ist mir wichtig und ich unternehme gerne etwas mit ihnen.</p>
+          <img class="Familie" src="Medien/familie.jpg" alt="Familie">
+          <img class ="Familie" src="Medien/polaroidmum.jpg" alt="Polaroid">
+          <p>Wir gehen normalerweise oft miteinander essen.</p>
+          <img class="Familie" src="Medien/food.jpg" alt="Essen">
+          <br>
+          <img class="Familie" src="Medien/motorrad.jpg" alt="motorrad">
+          <a class="button" href="#me">Geh zu meiner Person</a>
+
+     </div>
+
 </body>
 
-</html> 
+</html>

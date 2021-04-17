@@ -1,16 +1,3 @@
-h1 {
-    margin-top: 5%;
-    color: salmon;
-}
-
-#Tiere {
-    color:red;
-}
-
-.Test {
-    text-align: center;
-    font-family: "Monaco", monospace;
-}
 
 body {
     
@@ -18,31 +5,126 @@ body {
     border-width: 2px;
     border-color: black;
     border-radius: 35px;
-    background-color:white;
-    width:70%;
+    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L03/task_material/images/bg.png);
+    background-repeat: repeat;
+    width:800px;
     margin-top:2%;
     margin-bottom:3%;
     margin-left:auto;
     margin-right:auto;
+    overflow-x:hidden;
     box-shadow: 0 20px 25px 10px rgba(0, 0, 0, 0.4), 0 5px 25px 0 rgba(0, 0, 0, 0.19);
-    padding: 2%;
+}
+
+#Content{
+    padding: 3%;
 }
 
 html {
-    background-color:salmon;
+    background-color:#D98F8F;
 }
 
 .Navbar {
     overflow:visible;
-    background-color:salmon;
+    background-color: #D98F8F;
     position:sticky;
     top:2%;
     width:100%;
     border-radius: 10px;
     float:left;
+    z-index: 10;
+    box-shadow: 1px 1px 3px grey ;
     
     
 }
+
+.adopt {
+	box-shadow:inset 2px 1px 9px 1px #e8860e;
+	background-color:#f2af5c;
+	border-radius:11px;
+	border:1px solid #f2af5c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #f5c993;
+    margin-bottom:6%;
+    margin-top:-2%;
+    position: relative;
+    float: inline;
+    left:50%;
+    transform: translateX(-50%)
+}
+.adopt:hover {
+	background-color:#db943d;
+}
+.adopt:active {
+	position:relative;
+	top:1px;
+}
+
+.button {
+	box-shadow:inset 2px 1px 9px 1px #a36d6d;
+	background-color:#d98f8f;
+	border-radius:11px;
+	border:1px solid #d98f8f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #d98f8f;
+    margin-top:10%;
+    position: relative;
+    float: block;
+    left:5.5%;
+    transform: translateX(-50%);
+    margin-bottom:-30%;
+
+}
+.button:hover {
+	background-color:#f29e9e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.Absendebutton {
+	box-shadow:inset 2px 1px 9px 1px #a36d6d;
+	background-color:#d98f8f;
+	border-radius:11px;
+	border:1px solid #d98f8f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:8px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #d98f8f;
+    margin-top:0.5%;
+    position: relative;
+    left:17%;
+    transform: translateX(-50%)
+}
+.Absendebutton:hover {
+	background-color:#f29e9e;
+}
+.Absendebutton:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 #Krone {
     top: -36%;
@@ -50,7 +132,7 @@ html {
     float:right;
     right: 1%;
     width:5%;
-    background-color: salmon;
+    background-color: #D98F8F;
     border: 1px solid white;
     padding:10px;
     border-radius: 100%;
@@ -76,8 +158,22 @@ font-variant: small-caps;
 font-size: 1.2em;
 text-decoration: none;
 border-right:1px solid white;
-background-color: teal;
+background-color: #2A4759;
+
 }
+
+.Navbar .current{
+    background-color: #F2AF5C;
+}
+
+#Pfusch {
+    border-radius:10px 0 0 10px;
+}
+
+.Navbar div{
+    float:left;
+    
+    }
 
 .Navbar a:hover{
     color:black;
@@ -87,18 +183,269 @@ background-color: teal;
     font-size: 1.2em;
     text-decoration: none;
     border-right:1px solid white;
-    background-color: salmon;
+    background-color:#D98F8F;
 }
-
-
-.Navbar a:active{
-    color:salmon;
-    text-align: center;
+p {
     font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-right:1px solid white;
-    background-color: teal;
+    font-size: larger;
+
 }
 
+#Anni {
+    width:40%;
+    float: left;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#Aboutmediv{
+    float: inline;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6%;
+    margin-bottom:5%;
+    color: #2A4759;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-style: normal;
+    font-variant: small-caps;
+    width: 85%;
+    font-size: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2A4759;
+    margin-top:4%;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    width: 85%;
+}
+
+
+#Aboutme {
+    margin-top:10%;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: 0,5px;
+}
+
+
+.Medien {
+    width: 100%;
+    margin-bottom:4%;
+}
+
+#Audiotext {
+    width:45%;
+    float:left
+}
+
+#Audio {
+    position: relative;
+    width:50%;
+    right:0%;
+    margin-top:3%;
+    float:right;
+}
+
+#Audiogesamt {
+    float: inline;
+}
+
+#Audiopfusch {
+    margin-top:15%;
+}
+
+
+#Datenschutz {
+    color:grey;
+    font-size: 9pt;
+    width:90%;
+}
+
+.Input {
+    width:50%;
+    margin-bottom:0.5%;
+    background-color: lightgrey;
+}
+
+#Nachricht {
+    
+    background-color: lightgrey;
+}
+
+
+#kontaktformular{
+    float:inline-start;
+    width:400px;
+    margin-bottom:4%;
+}
+
+#Snoopy {
+float:inline;
+margin-bottom: 13%;;
+margin-left:10%;
+}
+
+
+#Insta {
+    width:4%;
+    position:absolute;
+    right:16%;
+    top:8%;
+
+}
+
+#Insta:hover {
+    width:5%;
+    position:absolute;
+    right:15.5%;
+    top:-2%;
+
+
+}
+
+
+#Discord {
+    width:5%;
+    position:absolute;
+    right:21.5%;
+    top:0%;
+    
+}
+    
+#Discord:hover {
+    width:6%;
+    position:absolute;
+    right:21%;
+    top:-10%;
+    
+}
+
+ #Header {
+    float:left;
+    width:800px;
+    margin-top:-10%;
+    margin-bottom:-10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 0 0 ;
+
+}
+
+
+Header {
+    margin:auto;
+    width:800px;
+    overflow:hidden;
+}
+
+
+#Pdf {
+    width:750px;height:450px
+}
+
+.Imagecontainer {
+    position: relative;
+    margin-bottom: 4%;
+  }
+  
+ 
+  .Imagetext {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Blenderbilder {
+      width:100%;
+  }
+
+  #Bauhaustext {
+      float: inline-end;
+      width: 40%;
+      margin-top: -2%;
+  }
+
+  #Bauhaus {
+      float: inline;
+  }
+
+  #Bauhauscontainer {
+      margin-top: 5%;
+  }
+  
+
+  #Saulgautext {
+    float: inline-end;
+    width: 40%;
+    margin-top: -2%;
+}
+
+#Saulgautext {
+    float: inline;
+}
+
+#Saulgaucontainer {
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 4%;
+}
+#Saulgau1 {
+    width: 60%;
+    right: 20%;
+    
+}
+
+
+#Saulgautext2 {
+    float: inline-end;
+    width: 40%;
+    margin-top: -2%;
+}
+
+#Saulgautext2 {
+    float: inline;
+}
+
+#Saulgaucontainer {
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 4%;
+}
+#Saulgau2 {
+    width: 60%;
+    right: 20%;
+    
+}
+#flower{
+    width: 100%;
+
+}
+.Familie{
+    width: 45%;
+    margin-top: 5%;
+}
+#Holi{
+    width: 100%;
+}
