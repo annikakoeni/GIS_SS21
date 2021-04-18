@@ -72,7 +72,6 @@ html {
 	background-color:#d98f8f;
 	border-radius:11px;
 	border:1px solid #d98f8f;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -81,13 +80,15 @@ html {
 	padding:12px 45px;
 	text-decoration:none;
 	text-shadow:0px 1px 6px #d98f8f;
-    margin-top:10%;
+    margin-bottom:5%;
+    margin-right:auto;
+    margin-left:auto;
+    display:inline-block;
     position: relative;
-    float: block;
-    left:5.5%;
-    transform: translateX(-50%);
-    margin-bottom:-30%;
-
+    float: inline;
+    left:50%;
+    transform: translateX(-50%)
+}
 }
 .button:hover {
 	background-color:#f29e9e;
@@ -257,15 +258,25 @@ h3{
 }
 
 #Audio {
-    position: relative;
+    position: absolute;
     width:50%;
     right:0%;
     margin-top:3%;
-    float:right;
+    float:inline;
 }
 
 #Audiogesamt {
-    float: inline;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6%;
+    float: inline-start;
+    position: relative;
+}
+
+#Tanz {
+   display:block;
+   margin-right: auto;
+   margin-left:auto;
 }
 
 #Audiopfusch {
@@ -377,7 +388,7 @@ Header {
     padding-right: 20px;
   }
 
-  .Blenderbilder {
+  .Bildermaxwidth {
       width:100%;
   }
 
@@ -412,7 +423,7 @@ Header {
     margin-bottom: 4%;
 }
 #Saulgau1 {
-    width: 60%;
+    width: 55%;
     right: 20%;
     
 }
@@ -428,13 +439,13 @@ Header {
     float: inline;
 }
 
-#Saulgaucontainer {
+.Saulgaucontainer {
     margin-top: 5%;
     position: relative;
     margin-bottom: 4%;
 }
-#Saulgau2 {
-    width: 60%;
+.Saulgau {
+    width: 55%;
     right: 20%;
     
 }
@@ -444,8 +455,14 @@ Header {
 }
 .Familie{
     width: 45%;
-    margin-top: 5%;
+    padding-right: 4%;
+    margin-bottom: 4%;
 }
 #Holi{
     width: 100%;
+}
+#Kunst{
+    width: 100%;
+    position: static;
+    display:block;
 }
