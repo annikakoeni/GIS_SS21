@@ -1,0 +1,672 @@
+
+    body{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px 15px 35px 35px;
+    background-image: url(https://raw.githubusercontent.com/gabriel-rausch/EIA1-Material/master/L03/task_material/images/bg.png);
+    background-repeat: repeat;
+    width:42%;
+    margin-top:2%;
+    margin-bottom:3%;
+    margin-left:auto;
+    margin-right:auto;
+    overflow-x:hidden;
+    box-shadow: 0 20px 25px 10px rgba(0, 0, 0, 0.4), 0 5px 25px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+
+header+div{
+    padding: 3%;
+}
+
+[lang|=de] {
+    background-color:#D98F8F;
+}
+
+.Navbar {
+    overflow:visible;
+    background-color: #D98F8F;
+    position:sticky;
+    top:2%;
+    width:100%;
+    border-radius: 10px;
+    float:left;
+    z-index: 10;
+    box-shadow: 1px 1px 3px grey ;
+    
+    display: flex;
+    
+    
+}
+
+.adopt {
+	box-shadow:inset 2px 1px 9px 1px #e8860e;
+	background-color:#f2af5c;
+	border-radius:11px;
+	border:1px solid #f2af5c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding:2% 6%;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #f5c993;
+    margin-bottom:6%;
+    margin-top:-2%;
+    position: relative;
+    float: inline;
+    left:50%;
+    transform: translateX(-50%)
+}
+.adopt:hover {
+	background-color:#db943d;
+}
+.adopt:active {
+	position:relative;
+	top:1px;
+}
+
+.button {
+	box-shadow:inset 2px 1px 9px 1px #a36d6d;
+	background-color:#d98f8f;
+	border-radius:11px;
+	border:1px solid #d98f8f;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding:12px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #d98f8f;
+    margin-bottom:5%;
+    margin-right:auto;
+    margin-left:auto;
+    display:inline-block;
+    position: relative;
+    float: inline;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+
+.button:hover {
+	background-color:#f29e9e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.Absendebutton {
+	box-shadow:inset 2px 1px 9px 1px #a36d6d;
+	background-color:#d98f8f;
+	border-radius:11px;
+	border:1px solid #d98f8f;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding:8px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #d98f8f;
+    margin-top:0.5%;
+}
+
+.Absendebutton:hover {
+	background-color:#f29e9e;
+}
+
+.Absendebutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#Krone {
+    top: -36%;
+    position:absolute;
+    float:right;
+    right: 1%;
+    width:5%;
+    background-color: #D98F8F;
+    border: 1px solid white;
+    padding:1.4%;
+    border-radius: 100%;
+    
+  transition: transform .7s ease-in-out;
+    
+}
+
+#Krone:hover {
+
+    
+  transform: rotate(360deg);
+}
+
+
+.Navbar a{
+float:left;
+color:white;
+text-align: center;
+padding: 1%;
+font-family: Arial, Helvetica, sans-serif;
+font-variant: small-caps;
+font-size: 1.3em;
+text-decoration: none;
+border-right:1px solid white;
+background-color: #2A4759;
+
+}
+
+.Navbar .current{
+    background-color: #F2AF5C;
+    transition: ease 0.2s;
+}
+
+#Pfusch {
+    border-radius:10px 0 0 10px;
+}
+
+.Navbar div{
+    float:left;
+    
+    }
+
+.Navbar a:hover{
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-right:1px solid white;
+    background-color:#D98F8F;
+    transition: ease 0.2s;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-size: 1.4em;
+
+}
+
+#Anni {
+    width:40%;
+    float: left;
+    margin-right:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#Aboutmediv{
+    display: block;
+    margin-bottom: 10%;
+}
+
+h1{
+    margin-top: 6%;
+    margin-bottom:5%;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    position:relative;
+    font-size: 50px;
+    max-width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    animation: mymove 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+
+@keyframes mymove {
+    from {left:-20%; opacity:0%;}
+    to {left:0%; opacity: 100%;}
+}
+
+h2{
+    margin-top:4%;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    text-transform: capitalize;
+    width: 85%;
+    font-size:1.4em;
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2A4759;    
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+
+#Aboutme {
+    margin-top:10%;
+    margin-bottom: 2%;
+}
+
+[title~=Kadse] {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:4%;
+    max-width:70%;
+}
+
+div>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: 0,5px;
+    font-size: 1.1em;
+}
+
+
+.Medien {
+    width: 100%;
+    margin-bottom:4%;
+}
+
+#Audiotext {
+    width:45%;
+    float:left
+}
+
+#Audio {
+    position: absolute;
+    display:block;
+    max-width:50%;
+    height: 10%;
+    right:0%;
+    margin-top:3%;
+}
+
+#Audiogesamt {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6%;
+    float: inline-start;
+    position: relative;
+}
+
+#Tanz {
+   display:block;
+   margin-right: auto;
+   margin-left:auto;
+   max-width:70%;
+}
+
+#Audiopfusch {
+    margin-top:15%;
+}
+
+
+#Datenschutz {
+    color:grey;
+    font-size: 0.7em;
+    width:90%;
+}
+
+Form input {
+    width:60%;
+    margin-bottom:0.5%;
+    background-color: lightgrey;
+}
+
+#Nachricht {
+    background-color: lightgrey;
+    max-width: 95%;
+    max-height: 40%;
+}
+
+
+#kontaktformular{
+    float:inline-start;
+    width:50%;
+}
+
+#Kontaktform {
+    max-width:100%;
+    max-height:30%;
+    float: inline;
+    margin-bottom:10%;
+    display: block;
+}
+
+#Snoopy {
+float:inline;
+position: relative;
+display: block;
+top:-20%;
+left:10%;
+margin-left:10%;
+max-width:35%;
+}
+
+
+#Insta {
+    width:4%;
+    position:absolute;
+    right:16%;
+    top:8%;
+    transition: 0.2s ease-in-out;
+
+}
+
+#Insta:hover {
+    width:5%;
+    position:absolute;
+    right:15.5%;
+    top:-2%;
+}
+
+
+#Discord {
+    width:5%;
+    position:absolute;
+    right:21.5%;
+    top:0%;
+    transition: 0.2s ease-in-out;
+    
+}
+    
+#Discord:hover {
+    width:6%;
+    position:absolute;
+    right:21%;
+    top:-10%;
+    
+}
+
+ #Header {
+    float:left;
+    width:100%;
+    margin-top:-10%;
+    margin-bottom:-10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 0 0 ;
+
+}
+
+
+Header {
+    margin:auto;
+    width:100%;
+    overflow:hidden;
+}
+
+
+object[data$=".pdf"]{
+    width:100%;height:450px;
+}
+
+
+
+.Imagecontainer {
+    position: relative;
+    margin-bottom: 4%;
+  }
+  
+ 
+  .Imagetext {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    max-height:50%;
+    max-width:30%;
+  }
+
+  .Bildermaxwidth {
+      width:100%;
+  }
+
+  #Bauhaustext {
+      float: inline-end;
+      width: 40%;
+      margin-top: -2%;
+  }
+
+  #Bauhaus {
+      float: inline;
+      max-width: 55%;
+  }
+
+  #Bauhauscontainer {
+      margin-top: 5%;
+  }
+  
+
+  #Saulgautext {
+    float: inline-end;
+    width: 40%;
+    margin-top: -2%;
+}
+
+#Saulgautext {
+    float: inline;
+}
+
+#Saulgaucontainer {
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 4%;
+}
+#Saulgau1 {
+    width: 55%;
+    right: 20%;
+    
+}
+
+
+#Saulgautext2 {
+    float: inline-end;
+    width: 40%;
+    margin-top: -2%;
+}
+
+#Saulgautext2 {
+    float: inline;
+}
+
+.Saulgaucontainer {
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 4%;
+}
+.Saulgau {
+    width: 55%;
+    right: 20%;
+    
+}
+#flower{
+    width: 100%;
+
+}
+.Familie{
+    width: 45%;
+    padding-right: 4%;
+    margin-bottom: 4%;
+}
+#Holi{
+    width: 100%;
+}
+#Kunst{
+    width: 100%;
+    position: static;
+    display:block;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width:70%;
+
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 33px;;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    div>h3 {
+        font-size: 1em;
+    }
+
+    h3+p {
+        font-size: 0.9em;
+    }
+
+    object[data$=".pdf"]{
+        width:100%;height:350px;
+    }
+.Navbar a {
+    font-size: 1.1em;
+}
+
+#Insta {
+    width:5%;
+}
+
+#Discord {
+    width:6%;
+    margin-right: 1%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+
+        width:100%;
+        margin-top: 3%;
+    }
+
+
+    #Audiopfusch{
+    margin-top: 100%;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        overflow:hidden;
+    }
+
+    .Navbar a{
+        width:30%;
+        font-size: 0.9em;
+    }
+
+    .Navbar a:hover{
+        font-size: 1em;
+    }
+
+    .Navbar div{
+        float:right;
+        height: 0;
+    }
+
+    #Pfusch{
+        border-radius: 0px;
+    }
+
+    #Insta {
+        width: 10%;
+        top:20%;
+        right:20%
+    }
+    #Discord {
+        width: 12%;
+        top:14%;
+        right:32%
+    }
+
+    #Insta:hover {
+        width: 12%;
+        top:12%;
+        right:19%
+    }
+
+    #Discord:hover {
+        width: 14%;
+        top: 9%;
+        right:31%
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    div>h3 {
+        font-size: 0.9em;
+    }
+
+    h3+p {
+        font-size: 0.8em;
+    }
+
+  #Krone {
+    float:right;
+    top:1%;
+    right: 1%;
+    width:12%;
+    background-color: #D98F8F;
+    border: 1px solid white;
+    padding:1.4%;
+    border-radius: 100%;
+    
+  transition: transform .7s ease-in-out;
+    
+}
+
+#Krone:hover {
+
+    
+  transform: rotate(360deg);
+}
+
+    object[data$=".pdf"]{
+        width:100%;height:250px;
+    }
+
+    header+div{
+        padding: 5%;
+    }
+
+    #Kontaktform {
+        margin-bottom: 25%;
+    }
+}
