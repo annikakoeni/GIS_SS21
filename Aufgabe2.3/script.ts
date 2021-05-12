@@ -49,5 +49,29 @@ function createDivRec(): void {
  * Aufgabe2
  */
 namespace Aufgabe2_3 {
+    export interface Art {
+        artSorte: string;
+        picture: string;
+
+    }
+    export interface Belag {
+        belagSorte: string;
+        picture: string;
+
+    }
+    export interface TopBelag {
+        topSorte: string;
+        picture: string;
+
+    }
+    export interface Essen {
+        art: Art;
+        belag: Belag;
+        top: TopBelag;
+
+    }
+    export let art: Art[] = [{ artSorte: "Pizza", picture: "bilder/pizza.jpg" }, { artSorte: "Pide vegetarisch", picture: "bilder/pidespinat.jpg" }, { artSorte: "Pide mit Hackfleisch", picture: "bilder/pide.jpg" }];
+    export let belag: Belag[] = [{ belagSorte: "Pilze", picture: "bilder/pilz.jpg" }, { belagSorte: "Schinken", picture: "bilder/schinken.jpg" }, { belagSorte: "Salami", picture: "bilder/salami.jpg" }];
+    export let top: TopBelag[] = [{ topSorte: "Rucola", picture: "bilder/rucola.jpg" }, { topSorte: "Parmesan", picture: "bilder/parmesan.jpg" }, { topSorte: "Kirschtomaten", picture: "tomate/pide.jpg" }];
 
 }

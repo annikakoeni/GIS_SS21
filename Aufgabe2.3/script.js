@@ -37,4 +37,13 @@ function createDivRec() {
     previousElement.appendChild(div);
     previousElement = div;
 }
+/**
+ * Aufgabe2
+ */
+var Aufgabe2_3;
+(function (Aufgabe2_3) {
+    Aufgabe2_3.art = [{ artSorte: "Pizza", picture: "bilder/pizza.jpg" }, { artSorte: "Pide vegetarisch", picture: "bilder/pidespinat.jpg" }, { artSorte: "Pide mit Hackfleisch", picture: "bilder/pide.jpg" }];
+    Aufgabe2_3.belag = [{ belagSorte: "Pilze", picture: "bilder/pilz.jpg" }, { belagSorte: "Schinken", picture: "bilder/schinken.jpg" }, { belagSorte: "Salami", picture: "bilder/salami.jpg" }];
+    Aufgabe2_3.top = [{ topSorte: "Rucola", picture: "bilder/rucola.jpg" }, { topSorte: "Parmesan", picture: "bilder/parmesan.jpg" }, { topSorte: "Kirschtomaten", picture: "tomate/pide.jpg" }];
+})(Aufgabe2_3 || (Aufgabe2_3 = {}));
 //# sourceMappingURL=script.js.map

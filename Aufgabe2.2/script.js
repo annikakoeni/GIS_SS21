@@ -101,52 +101,52 @@ let canvas = document.getElementById("myFirstCanvas");
 let context = canvas.getContext("2d");
 context.lineWidth = 10;
 //Himmel & Boden
-context.fillStyle = "#2E9AFE";
+context.fillStyle = "#9AE5E6";
 context.fillRect(0, 0, 500, 350);
-context.fillStyle = "#298A08";
+context.fillStyle = "#81A094";
 context.fill();
-context.fillRect(0, 350, 500, 60);
+context.fillRect(0, 350, 500, 40);
 //Haus
+context.fillStyle = "#32161F";
+context.fillRect(290, 240, 160, 110);
 context.fillStyle = "#000000";
-context.fillRect(275, 240, 150, 110);
-context.fillStyle = "#61380B";
-context.fillRect(370, 290, 40, 60);
-context.fillStyle = "#81F7F3";
-context.fillRect(300, 255, 40, 30);
+context.fillRect(370, 290, 45, 60);
+context.fillStyle = "#9AE5E6";
+context.fillRect(310, 260, 40, 45);
 let pathTriangle = new Path2D();
-pathTriangle.moveTo(250, 240);
-pathTriangle.lineTo(350, 160);
+pathTriangle.moveTo(290, 240);
+pathTriangle.lineTo(375, 140);
 pathTriangle.lineTo(450, 240);
-pathTriangle.lineTo(250, 240);
+pathTriangle.lineTo(290, 240);
 pathTriangle.closePath();
-context.fillStyle = "#B43104";
+context.fillStyle = "#775B59";
 context.fill(pathTriangle);
 context.stroke(pathTriangle);
 //Baum
-context.fillStyle = "#3B0B0B";
-context.fillRect(100, 270, 20, 80);
+context.fillStyle = "#775B59";
+context.fillRect(120, 270, 30, 80);
 let pathTree = new Path2D();
-pathTree.arc(110, 250, 40, 0, 2 * Math.PI);
-context.fillStyle = "#21610B";
+pathTree.arc(135, 250, 50, 0, 2 * Math.PI);
+context.fillStyle = "#2A4D14";
 context.fill(pathTree);
-context.strokeStyle = "#21610B";
+context.strokeStyle = "#2A4D14";
 context.stroke(pathTree);
 //Wolke 1
 let pathCloud = new Path2D();
-pathCloud.arc(60, 60, 30, 0, 2 * Math.PI);
+pathCloud.arc(70, 120, 40, 0, 2 * Math.PI);
 context.lineWidth = 3;
-context.fillStyle = "#D8D8D8";
+context.fillStyle = "#E6E8E6";
 context.fill(pathCloud);
-context.strokeStyle = "#6E6E6E";
+context.strokeStyle = "#C0D6DF";
 context.stroke(pathCloud);
 //Wolke 2
 let pathCloud2 = new Path2D();
-pathCloud2.arc(300, 40, 30, 0, 2 * Math.PI);
+pathCloud2.arc(270, 40, 40, 0, 2 * Math.PI);
 context.fill(pathCloud2);
 context.stroke(pathCloud2);
 //Wolke 3
 let pathCloud3 = new Path2D();
-pathCloud3.arc(180, 100, 30, 0, 2 * Math.PI);
+pathCloud3.arc(180, 140, 30, 0, 2 * Math.PI);
 context.fill(pathCloud3);
 context.stroke(pathCloud3);
 //Wolke 4
@@ -156,16 +156,16 @@ context.fill(pathCloud4);
 context.stroke(pathCloud4);
 let canvas2 = document.getElementById("mySecondCanvas");
 let context2 = canvas2.getContext("2d");
-function createRect2() {
-    let rechti = { xkoordinate: Math.floor(Math.random() * 501), y: Math.floor(Math.random() * 501), breit: Math.floor(Math.random() * 501), höhe: Math.floor(Math.random() * 501) };
-    return rechti;
+function createRechteck2() {
+    let kasten = { xkoordinate: Math.floor(Math.random() * 501), y: Math.floor(Math.random() * 501), breit: Math.floor(Math.random() * 501), höhe: Math.floor(Math.random() * 501) };
+    return kasten;
 }
-function drawRect2(_rechti) {
-    context2.fillRect(_rechti.xkoordinate, _rechti.y, _rechti.breit, _rechti.höhe);
+function drawRechteck2(_kasten) {
+    context2.fillRect(_kasten.xkoordinate, _kasten.y, _kasten.breit, _kasten.höhe);
 }
-let rectArray2 = [];
+let rechteckArray2 = [];
 for (let i = 0; i < 5; i++) {
-    rectArray2.push(createRect2());
-    drawRect2(rectArray2[i]);
+    rechteckArray2.push(createRechteck2());
+    drawRechteck2(rechteckArray2[i]);
 }
 //# sourceMappingURL=script.js.map
