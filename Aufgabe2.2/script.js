@@ -12,41 +12,75 @@ function min(..._arraylist) {
     return minimum;
 }
 console.log(min(5, 42, 17, 2018, -10, 60, -10010));
-// class Studenten {
-//     name: string;
-//     alter: number;
-//     matrikelnummer: number;
-//     constructor(_name: string, _alter: number, _matrikelnummer: number) {
-//         this.name = _name;
-//         this.alter = _alter;
-//         this.matrikelnummer = _matrikelnummer;
-//     }
 /**
- * showInfo
+ * 1b
  */
-//     public showInfo(student: Studenten): void {
-//         console.log(student.name);
-//         console.log(student.matrikelnummer);
-//         console.log(student.alter);
-// }
-// }
-let student1 = studentenErschaffen("Walter White", 52, 56789);
-let student2 = studentenErschaffen("Jesse Pinkman", 28, 29809);
-let student3 = studentenErschaffen("Holly White", 18, 83409);
-function studentenErschaffen(_name, _alter, _matrikelnummer) {
-    let student = { name: _name, alter: _alter, matrikelnummer: _matrikelnummer };
-    return student;
+/**function isEven(_num: number): boolean {
+    _num = Math.abs(_num);
+    if (_num == 0) {
+        return true;
+    }
+    if (_num == 1) {
+        return false;
+    }
+    return isEven(_num - 2);
 }
+console.log(isEven(-10));
+*/
+function isEven(_input) {
+    if (_input == 0)
+        return true;
+    if (_input == 1)
+        return false;
+    let result = isEven(_input - 2);
+    return result;
+}
+console.log(isEven(50));
+console.log(isEven(75));
+/** Math.abs benutzt den Betrag einer Zahl, so können auch negative Zahlen getestet werden */
+/**
+ * 1c
+ */
+//interface Studenten {
+//    name: string; alter: number; matrikelnummer: number;
+//}
+class Studenten {
+    constructor(_name, _alter, _matrikelnummer) {
+        this.name = _name;
+        this.alter = _alter;
+        this.matrikelnummer = _matrikelnummer;
+    }
+    /**
+     * showInfo
+     */
+    showInfo(student) {
+        console.log(student.name);
+        console.log(student.matrikelnummer);
+        console.log(student.alter);
+    }
+}
+let student1 = new Studenten("Walter White", 52, 56789);
+let student2 = new Studenten("Jesse Pinkman", 28, 29809);
+let student3 = new Studenten("Holly White", 18, 83409);
+//function studentenErschaffen(_name: string, _alter: number, _matrikelnummer: number): Studenten {
+//    let student: Studenten = { name: _name, alter: _alter, matrikelnummer: _matrikelnummer };
+//    return student;
+//}
 let arrayStudent = [];
 arrayStudent.push(student1);
 arrayStudent.push(student2);
 arrayStudent.push(student3);
-arrayStudent.push({ name: "Karla Kolumna", alter: 35, matrikelnummer: 34593 });
+arrayStudent.push(new Studenten("Karla Kolumna", 35, 34593));
+for (let _student of arrayStudent) {
+    _student.showInfo(_student);
+}
+/**
 console.log(student1.name);
 console.log(student2.matrikelnummer);
 console.log(student3.alter);
 console.log(arrayStudent[3].name);
-function showInfo(student) {
+
+function showInfo(student: Studenten): void {
     console.log(student.name);
     console.log(student.matrikelnummer);
     console.log(student.alter);
@@ -55,6 +89,7 @@ showInfo(student1);
 showInfo(student2);
 showInfo(student3);
 showInfo(arrayStudent[3]);
+*/
 /**
  * 2a
  */

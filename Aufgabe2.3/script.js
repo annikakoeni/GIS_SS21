@@ -1,49 +1,38 @@
 "use strict";
-/**
- * Aufgabe 1
- */
-/**
- * Buttons with Eventlistener
- */
-let addRecButton = document.createElement("Button");
-let textRecButton = document.createTextNode("Rectangler");
-addRecButton.appendChild(textRecButton);
-document.body.appendChild(addRecButton);
-addRecButton.id = "RecButtId";
-let resetWindowButton = document.createElement("Button");
-let textWinButton = document.createTextNode("Resetter");
-resetWindowButton.id = "resetButtId";
-resetWindowButton.appendChild(textWinButton);
-document.body.appendChild(resetWindowButton);
-document.getElementById("RecButtId").addEventListener("click", createDivRec);
-document.getElementById("resetButtId").addEventListener("click", resetWindow);
-/**
-* Functions for Window resetting and creating Rectangle Divs
-*/
-function resetWindow() {
-    window.location.reload();
-}
-function createDivRec() {
-    let colors = ["blue", "red", "brown", "yellow", "green", "purple", "pink", "turquoise"];
-    let previousElement = document.body;
-    let div = document.createElement("div");
-    div.style.height = (50 + Math.floor(Math.random() * 451)).toString() + "px";
-    div.style.width = (50 + Math.floor(Math.random() * 451)).toString() + "px";
-    div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)].toString();
-    div.style.position = "absolute";
-    div.style.left = (50 + Math.floor(Math.random() * 451)).toString() + "px";
-    div.style.right = (50 + Math.floor(Math.random() * 451)).toString() + "px";
-    div.classList.add("rectangle");
-    previousElement.appendChild(div);
-    previousElement = div;
-}
-/**
- * Aufgabe2
- */
-var Aufgabe2_3;
-(function (Aufgabe2_3) {
-    Aufgabe2_3.art = [{ artSorte: "Pizza", picture: "bilder/pizza.jpg" }, { artSorte: "Pide vegetarisch", picture: "bilder/pidespinat.jpg" }, { artSorte: "Pide mit Hackfleisch", picture: "bilder/pide.jpg" }];
-    Aufgabe2_3.belag = [{ belagSorte: "Pilze", picture: "bilder/pilz.jpg" }, { belagSorte: "Schinken", picture: "bilder/schinken.jpg" }, { belagSorte: "Salami", picture: "bilder/salami.jpg" }];
-    Aufgabe2_3.top = [{ topSorte: "Rucola", picture: "bilder/rucola.jpg" }, { topSorte: "Parmesan", picture: "bilder/parmesan.jpg" }, { topSorte: "Kirschtomaten", picture: "tomate/pide.jpg" }];
-})(Aufgabe2_3 || (Aufgabe2_3 = {}));
+var Aufgabe2_3_1;
+(function (Aufgabe2_3_1) {
+    // Button Eventlisteners
+    document.getElementById("add").addEventListener("click", createRectangle);
+    document.getElementById("reset").addEventListener("click", reset);
+    // creating one Rectangle Div and adding it to the page
+    function createRectangle() {
+        let div = document.createElement("div");
+        div.classList.add("rect");
+        div.style.top = getRandom(0, 500) + "px";
+        div.style.left = getRandom(0, 500) + "px";
+        div.style.width = getRandom(20, 200) + "px";
+        div.style.height = getRandom(20, 200) + "px";
+        div.style.backgroundColor = `rgb(${getRandom(0, 255)}, ${getRandom(0, 255)}, ${getRandom(0, 255)})`;
+        document.getElementById("putRectsHere").appendChild(div);
+    }
+    function reset() {
+        // remove old rectangles
+        let oldRects = document.querySelectorAll("div.rect");
+        for (let oldRect of oldRects) {
+            oldRect.remove();
+        }
+        // run what was initially run by the website
+        createInitialRectangles();
+    }
+    // first page load
+    function createInitialRectangles() {
+        for (let i = 0; i < 5; i++) {
+            createRectangle();
+        }
+    }
+    createInitialRectangles();
+    function getRandom(_min, _max) {
+        return Math.floor(Math.random() * (_max - _min) + _min);
+    }
+})(Aufgabe2_3_1 || (Aufgabe2_3_1 = {}));
 //# sourceMappingURL=script.js.map
