@@ -1,0 +1,14 @@
+#putRectsHere {
+	position: relative;
+	width: 100%;
+}
+
+.rect {
+	position: absolute;
+}
+.error {
+	color: red;
+}
+.message {
+	color:skyblue;
+}
