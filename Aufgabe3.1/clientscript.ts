@@ -13,7 +13,7 @@ namespace P_3_1Server {
         _url = _url + "?" + query.toString();
         let answer: Response = await fetch(_url);
         let output: string = await answer.text();
-        let displayResponse: HTMLParagraphElement = <HTMLDivElement>document.getElementById("answer");
+        let displayResponse: HTMLParagraphElement = <HTMLDivElement>document.getElementById("Daten");
         displayResponse.innerText = output;
     }
     let sendButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("button");

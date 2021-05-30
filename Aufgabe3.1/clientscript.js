@@ -15,7 +15,7 @@ var P_3_1Server;
         _url = _url + "?" + query.toString();
         let answer = await fetch(_url);
         let output = await answer.text();
-        let displayResponse = document.getElementById("answer");
+        let displayResponse = document.getElementById("Daten");
         displayResponse.innerText = output;
     }
     let sendButton = document.getElementById("button");
