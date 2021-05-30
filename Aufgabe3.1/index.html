@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="Startseite">Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="clientscript.js" defer></script>
 </head>
+
 <body>
-    <a href="Belagseite.html"> <button>Nächste Auswahl</button>
-    </a>
+    <h2>Formular</h2>
+    <form name="kontaktformular"></form>
+    
+            <input type="text" class="Input" name="Vorname" placeholder="Vorname">
+
+            <input type="text" class="Input" name="Nachname" placeholder="Nachname">
+    >
+            <input type="email" class="Input" name="Email" placeholder="E-Mail">
+            <button type="button" id="button">Absenden</button>
+
+    </form>
+
+    <h2>Gesendete Daten</h2>
+    <p id="Daten"></p>
 
     
 </body>
