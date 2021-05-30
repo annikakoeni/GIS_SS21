@@ -7,7 +7,7 @@ var P_3_1Server;
         for (let entry of formData) {
             console.log(entry);
             console.log("name: " + entry[0]);
-            console.log("value: " + entry[1]);
+            //console.log("value: " + entry[1]);
         }
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
