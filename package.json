@@ -1,0 +1,22 @@
+{
+  "name": "gis_ss21",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html>\r <html>\r <head>\r <meta charset=\"utf-8\">\r <title>Annika</title>\r </head>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Aufgabe3.1/serverscript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annikakoeni/GIS_SS21.git"
+  },
+  "author": "annika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annikakoeni/GIS_SS21/issues"
+  },
+  "homepage": "https://github.com/annikakoeni/GIS_SS21#readme",
+  "dependencies": {
+    "@types/node": "^15.6.1"
+  }
+}
