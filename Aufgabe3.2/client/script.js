@@ -4,12 +4,6 @@ var P_3_2Server;
     let displayResponse = document.getElementById("answer");
     async function sendDataHTML() {
         let formData = new FormData(document.forms[0]);
-        //console.log(":" + formData.get("name"));
-        //for (let entry of formData) {
-        //    console.log(entry);
-        //    console.log("name: " + entry[0]);
-        //    console.log("value: " + entry[1]);
-        //}
         let _url = "https://akgis.herokuapp.com";
         _url += "/html";
         // tslint:disable-next-line: no-any
