@@ -10,7 +10,7 @@ namespace P_3_2Server {
         //}
 
 
-        let _url: RequestInfo = "https://akgis.herokuapp.com/";
+        let _url: RequestInfo = "https://akgis.herokuapp.com";
         _url += "/html";
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
@@ -29,7 +29,7 @@ namespace P_3_2Server {
         //}
 
 
-        let _url: RequestInfo = "https://akgis.herokuapp.com/";
+        let _url: RequestInfo = "https://akgis.herokuapp.com";
         _url += "/json";
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
