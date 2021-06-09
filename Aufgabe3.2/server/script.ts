@@ -19,28 +19,29 @@ export namespace P_3_2Server {
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {      //function Request granting access for everyone and giving back the sent message url
         console.log(_request.url);
-        _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");  
-        
+        _response.setHeader("Access-Control-Allow-Origin", "*");
+
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
-            let path: string = <string>url.pathname; 
+            let path: string = <string>url.pathname;
             if (path == "/html") {
+                _response.setHeader("content-type", "text/html; charset=utf-8");
                 for (let key in url.query) {
-                    _response.write(key + ":" + url.query[key]);
+                    _response.write("<p>" + key + ":" + url.query[key] + "</p>");
                 }
             }
             if (path == "/json") {
+                _response.setHeader("content-type", "application/json");
                 let sentObject: string = JSON.stringify(url.query);
                 console.log(sentObject);
                 _response.write(sentObject);
-                
+
             }
+            _response.end();
         }
-        _response.end();
+
+
     }
-
-
 }
-    
+
 
