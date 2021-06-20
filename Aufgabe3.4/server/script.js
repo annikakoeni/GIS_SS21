@@ -10,14 +10,14 @@ var P_3_4;
     let port = Number(process.env.PORT); //create Port = "Gateway" to server
     if (!port)
         port = 8100; //set port to 8100 (if it wasn't before) 
-    startServer(port);
-    function startServer(_port) {
+    starteServer(port);
+    function starteServer(_port) {
         let server = Http.createServer(); //create server
         console.log("Starting Server" + port);
         server.addListener("request", handleRequest); //Listener for Requests and Listen functions
         server.listen(port);
     }
-    let databaseURL = "mongodb+srv://user1:<12345>@clustergis.8spcp.mongodb.net/AbgabeEnde?retryWrites=true&w=majority";
+    let databaseURL = "mongodb+srv://user1:12345@clustergis.8spcp.mongodb.net/AbgabeEnde?retryWrites=true&w=majority";
     async function handleRequest(_request, _response) {
         _response.setHeader("Access-Control-Allow-Origin", "*");
         _response.setHeader("content-type", "text/html; charset=utf-8");

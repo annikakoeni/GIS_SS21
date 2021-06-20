@@ -8,9 +8,9 @@ export namespace P_3_4 {
     let port: number = Number(process.env.PORT);        //create Port = "Gateway" to server
     if (!port)
         port = 8100;                                    //set port to 8100 (if it wasn't before) 
-    startServer(port);
+    starteServer(port);
 
-    function startServer(_port: number | string): void {
+    function starteServer(_port: number | string): void {
 
 
 
@@ -21,7 +21,7 @@ export namespace P_3_4 {
 
     }
 
-    let databaseURL: string = "mongodb+srv://user1:<12345>@clustergis.8spcp.mongodb.net/AbgabeEnde?retryWrites=true&w=majority";
+    let databaseURL: string = "mongodb+srv://user1:12345@clustergis.8spcp.mongodb.net/AbgabeEnde?retryWrites=true&w=majority";
 
     async function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): Promise<void> {      //function Request granting access for everyone and giving back the sent message url
 
