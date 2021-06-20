@@ -9,6 +9,8 @@ var P_3_4;
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         _url = _url + "?" + query.toString();
+        let answer = await fetch(_url);
+        console.log(answer);
     }
     async function getData() {
         let formData = new FormData(document.forms[0]);

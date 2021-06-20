@@ -8,6 +8,8 @@ namespace P_3_4 {
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         _url = _url + "?" + query.toString();
+        let answer: Response = await fetch(_url);        
+        console.log(answer);
 
     }
     async function getData(): Promise<void> {
