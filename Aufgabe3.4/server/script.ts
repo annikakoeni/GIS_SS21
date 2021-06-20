@@ -4,7 +4,7 @@ import * as Mongo from "mongodb";
 
 export namespace P_3_4 {
 
-    console.log("Starting server");
+    console.log("Starte Server");
     let port: number = Number(process.env.PORT);        //create Port = "Gateway" to server
     if (!port)
         port = 8100;                                    //set port to 8100 (if it wasn't before) 
@@ -31,7 +31,7 @@ export namespace P_3_4 {
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
             let path: string = <string>url.pathname;
-            let input: Data = { name: url.query.name + "", mail: url.query.mail + "", subject: url.query.subject + "" };
+            let input: Data = { name: url.query.name + " ", email: url.query.email + " ", subject: url.query.subject + " " };
             if (path == "/sendData") {
                 let data: string = await sendDatabaseData(databaseURL, input);
                 _response.write(data);
@@ -51,7 +51,7 @@ export namespace P_3_4 {
     }
     interface Data {
         name: string;
-        mail: string;
+        email: string;
         subject: string;
     }
     async function getDatabaseData(_url: string): Promise<Data[]> {
